@@ -5,6 +5,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\data\ActiveDataProvider;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -159,6 +160,68 @@ class SiteController extends Controller
         }
 
         return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Displays services page.
+     *
+     * @return mixed
+     */
+    public function actionServices()
+    {
+        $dataProvider = new ActiveDataProvider([
+            'query' => \backend\models\Category::find(),
+        ]);
+        $dataServiceProvider = new ActiveDataProvider([
+            'query' => \backend\models\Service::find(),
+        ]);
+
+        return $this->render('services', [
+            'dataProvider' => $dataProvider,
+            'dataServiceProvider' => $dataServiceProvider,
+        ]);
+    }
+
+    /**
+     * Displays services page.
+     *
+     * @return mixed
+     */
+    public function actionBlog()
+    {
+        $dataProvider = new ActiveDataProvider([
+            'query' => \backend\models\Post::find(),
+        ]);
+
+        return $this->render('blog', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    /**
+     * Displays post page.
+     * @param int $id
+     * @return mixed
+     */
+    public function actionPost($id)
+    {
+        $model = \backend\models\Post::findOne(['id'=>$id]);
+        return $this->render('post', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Displays service page.
+     * @param int $id
+     * @return mixed
+     */
+    public function actionService($id)
+    {
+        $model = \backend\models\Service::findOne(['id'=>$id]);
+        return $this->render('service', [
             'model' => $model,
         ]);
     }

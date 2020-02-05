@@ -4,6 +4,7 @@
 
 $this->title = 'Speed';
 ?>
+<div id="content" class="site-content">
 <article id="post-8" class="post-8 page type-page status-publish hentry">
     <div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8" data-elementor-settings="[]">
     <div class="elementor-inner">
@@ -1070,4 +1071,4 @@ $this->title = 'Speed';
     </div>
     </div>
 </article>
-
+</div>
