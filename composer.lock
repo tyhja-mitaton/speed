@@ -4,14 +4,74 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50114089d7de41b6fbcc4d646295169a",
+    "content-hash": "7b7073808ecbbf4c4d518f19d930cd7c",
     "packages": [
+        {
+            "name": "2amigos/yii2-tinymce-widget",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-tinymce-widget.git",
+                "reference": "a58b7a59a1508f4251a8cea9e010d31c9733bde4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-tinymce-widget/zipball/a58b7a59a1508f4251a8cea9e010d31c9733bde4",
+                "reference": "a58b7a59a1508f4251a8cea9e010d31c9733bde4",
+                "shasum": ""
+            },
+            "require": {
+                "tinymce/tinymce": ">=4",
+                "yiisoft/yii2": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\tinymce\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TinyMCE widget for Yii2.",
+            "homepage": "http://yiiwheels.com/extension/tinymce-widget",
+            "keywords": [
+                "2amigos",
+                "extension",
+                "tinymce",
+                "widget",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2018-11-01T20:46:52+00:00"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
+                "url": "https://github.com/twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -26,6 +86,28 @@
             "type": "bower-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/fancybox",
+            "version": "v3.3.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fancyapps/fancyBox.git",
+                "reference": "059c44062a033665cb635364320713cbc52de651"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fancyapps/fancyBox/zipball/059c44062a033665cb635364320713cbc52de651",
+                "reference": "059c44062a033665cb635364320713cbc52de651",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "GPL-3.0"
             ]
         },
         {
@@ -55,7 +137,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -333,6 +415,51 @@
                 "html"
             ],
             "time": "2019-10-28T03:44:26+00:00"
+        },
+        {
+            "name": "newerton/yii2-fancybox-3",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/newerton/yii2-fancybox-3.git",
+                "reference": "3e42c3e981afab250f2557697cfd509118aa9524"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/newerton/yii2-fancybox-3/zipball/3e42c3e981afab250f2557697cfd509118aa9524",
+                "reference": "3e42c3e981afab250f2557697cfd509118aa9524",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/fancybox": "~3.3.5",
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "newerton\\fancybox3\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Newerton Vargas de Araujo",
+                    "email": "newerton.araujo@gmail.com"
+                }
+            ],
+            "description": "fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.",
+            "keywords": [
+                "extension",
+                "fancyapps",
+                "fancybox",
+                "fancybox3",
+                "yii2"
+            ],
+            "time": "2018-04-20T16:51:49+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -632,6 +759,52 @@
             "time": "2019-11-27T13:56:44+00:00"
         },
         {
+            "name": "tinymce/tinymce",
+            "version": "5.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tinymce/tinymce-dist.git",
+                "reference": "1a55d7d048c62c64c3f43734dfaa4bc0d776a035"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/1a55d7d048c62c64c3f43734dfaa4bc0d776a035",
+                "reference": "1a55d7d048c62c64c3f43734dfaa4bc0d776a035",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "tinymce.js",
+                        "plugins/*/plugin.js",
+                        "themes/*/theme.js"
+                    ],
+                    "files": [
+                        "tinymce.min.js",
+                        "plugins/*/plugin.min.js",
+                        "themes/*/theme.min.js",
+                        "skins/**"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "description": "Web based JavaScript HTML WYSIWYG editor control.",
+            "homepage": "http://www.tinymce.com",
+            "keywords": [
+                "editor",
+                "html",
+                "javascript",
+                "richtext",
+                "tinymce",
+                "wysiwyg"
+            ],
+            "time": "2020-01-28T05:08:04+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "2.0.32",
             "source": {
@@ -898,6 +1071,97 @@
                 "yii2"
             ],
             "time": "2018-09-23T22:00:47+00:00"
+        },
+        {
+            "name": "zelenin/string",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zelenin/string.git",
+                "reference": "d57f21f32d2b2eb52e96e892500afaeb0b3fac19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zelenin/string/zipball/d57f21f32d2b2eb52e96e892500afaeb0b3fac19",
+                "reference": "d57f21f32d2b2eb52e96e892500afaeb0b3fac19",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zelenin\\Ddd\\String\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Zelenin",
+                    "email": "aleksandr@zelenin.me",
+                    "homepage": "http://zelenin.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "String transformers collection",
+            "homepage": "https://github.com/zelenin/string",
+            "keywords": [
+                "ddd",
+                "slug",
+                "string",
+                "translit"
+            ],
+            "time": "2015-12-23T00:06:30+00:00"
+        },
+        {
+            "name": "zelenin/yii2-slug-behavior",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zelenin/yii2-slug-behavior.git",
+                "reference": "e40f370c55825a2ea65ef0e47c6f7c46b7703485"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zelenin/yii2-slug-behavior/zipball/e40f370c55825a2ea65ef0e47c6f7c46b7703485",
+                "reference": "e40f370c55825a2ea65ef0e47c6f7c46b7703485",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.7",
+                "zelenin/string": "~0.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "Zelenin\\yii\\behaviors\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Zelenin",
+                    "email": "aleksandr@zelenin.me",
+                    "homepage": "http://zelenin.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 slug behavior",
+            "homepage": "https://github.com/zelenin/yii2-slug-behavior",
+            "keywords": [
+                "Behavior",
+                "slug",
+                "yii2"
+            ],
+            "time": "2016-02-14T21:37:51+00:00"
         }
     ],
     "packages-dev": [
@@ -4090,9 +4354,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6.0"

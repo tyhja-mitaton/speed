@@ -45,6 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                                                 <div class="jet-portfolio__inner" style="opacity: 1; transform: scale(1);">
                                                                     <a class="jet-portfolio__link " href="" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f974612">
                                                                         <div class="jet-portfolio__image">
+                                                                            <?php echo newerton\fancybox3\FancyBox::widget(['target' => '[data-fancybox]']); ?>
+                                                                            <?=yii\helpers\Html::a(yii\helpers\Html::img('img/img_8.jpg'), 'img/img_8.jpg', ['data-fancybox' => true]) ?>
                                                                             <img class="jet-portfolio__image-instance lazy-loaded" src="" data-lazy-type="image" data-src="" alt="work" width="1024" height="610">
                                                                             <noscript><img class="jet-portfolio__image-instance" src="" width="1024" height="610"  alt="work"></noscript>
                                                                             <div class="jet-portfolio__cover"><i class="fa fa-arrows-alt"></i></div>
